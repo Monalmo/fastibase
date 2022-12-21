@@ -69,7 +69,13 @@ const start = async () => {
 			const rutasLibres = ['/ingreso', '/ingreso/pedirCodigoPass', '/ingreso/cambiarPassConCodigo', '/onB/usuario']
 			console.log(_.isEmpty(_.filter(rutasLibres, ruta)), rutasLibres)
 
-			if ( !_.isEmpty( _.filter(rutasLibres, r => { if (r === ruta) return r }) ) ) {
+			if (
+				!_.isEmpty(
+					_.filter(rutasLibres, r => {
+						if (r === ruta) return r
+					})
+				)
+			) {
 				console.log(`Ruta ${ruta} sin validacion de token`)
 
 				return
