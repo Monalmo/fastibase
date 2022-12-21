@@ -1,0 +1,62 @@
+{
+	"name": "microvisitas",
+	"version": "1.0.0",
+	"description": "Proyecto creado con Fastify-CLI. utilizado como base para los proyectos de microservicios",
+	"main": "server.ts",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"build:ts": "tsc",
+		"watch:ts": "tsc -w",
+		"dev": "MODO=dev tsnd --respawn -r tsconfig-paths/register src/server.ts",
+		"build": "yarn clean && tsc && tsc-alias",
+		"clean": "rm -rf ./build",
+		"start": "node build/server.js",
+		"lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .eslintignore .",
+		"lint:prettier": "prettier --check .",
+		"lintfix": "prettier --write --list-different . && yarn lint --fix"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@fastify/autoload": "^5.0.0",
+		"@fastify/cors": "^8.2.0",
+		"@fastify/helmet": "^10.1.0",
+		"@fastify/routes": "^5.1.0",
+		"@fastify/sensible": "^4.0.0",
+		"chalk": "^4.1.2",
+		"fastify": "^4",
+		"fastify-cli": "^5.7.0",
+		"fastify-plugin": "^4.0.0",
+		"fastify-xml-body-parser": "^2.1.1",
+		"ts-node": "^10.9.1"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.0",
+		"@types/tap": "^15.0.5",
+		"@typescript-eslint/eslint-plugin": "^5.8.0",
+		"@typescript-eslint/parser": "^5.8.0",
+		"babel-eslint": "^10.1.0",
+		"concurrently": "^7.0.0",
+		"cross-env": "^7.0.3",
+		"eslint": "^7.32.0",
+		"eslint-config-standard": "^14.1.0",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-node": "^11.0.0",
+		"eslint-plugin-promise": "^4.3.1",
+		"eslint-plugin-standard": "^4.1.0",
+		"fastify-tsconfig": "^1.0.1",
+		"pino": "^7.6.1",
+		"pino-pretty": "^7.3.0",
+		"prettier": "^2.6.2",
+		"tap": "^16.1.0",
+		"ts-node-dev": "^2.0.0",
+		"tsc-alias": "^1.6.3",
+		"tsconfig-paths": "^3.12.0",
+		"typescript": "^4.8.4"
+	},
+	"packageManager": "yarn@3.2.1"
+}

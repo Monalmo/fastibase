@@ -1,0 +1,25 @@
+{
+	"extends": "fastify-tsconfig",
+
+	"compilerOptions": {
+		"importHelpers": true,
+		"forceConsistentCasingInFileNames": true,
+		"outDir": "./build",
+		"allowJs": true,
+		"target": "ES2020",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"noImplicitAny": false,
+		"module": "CommonJS",
+		"lib": ["ES2020"],
+		"baseUrl": ".",
+		"paths": {
+			"@lib/*": ["./src/lib/*"],
+			"@utilidades/*": ["./src/utilidades/*"],
+			"@plugins/*": ["./src/plugins/*"],
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": ["src/**/*.ts"]
+}

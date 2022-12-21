@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			// "titleBar.activeForeground": "#8BB8A8",
+			"activityBar.foreground": "#8BE8CB",
+			"activityBar.activeBackground": "#0A3326",
+			"sideBar.foreground": "#bbb",
+			// "statusBar.foreground": "#000",
+
+			"activityBar.background": "#051b14",
+			"sideBar.background": "#051b14",
+
+			"titleBar.activeBackground": "#141414",
+			"editor.background": "#161616",
+			"statusBar.background": "#141414"
+		},
+		"window.title": "Titulo Workspace ${separator}${activeEditorShort}",
+
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true
+		},
+		"[json]": {
+			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		}
+	}
+}
